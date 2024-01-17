@@ -1,0 +1,46 @@
+<html>
+<body style="background-color:lavender; color:blueviolet; font-family: Arial, Helvetica, sans-serif;">
+    <h1>Registration Form</h1>
+    
+    <form action="URL" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+        <br>
+        <br>
+        <label>Gender:</label>
+        <label for="male"><input type="radio" id="male" name="gender" value="male" required> Male</label>
+        <label for="female"><input type="radio" id="female" name="gender" value="female" required> Female</label>
+        <br>
+        <br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br>
+        <br>
+        <label>Languages Known:</label>
+        <label for="english"><input type="checkbox" id="english" name="languages[]" value="english"> English</label>
+        <label for="spanish"><input type="checkbox" id="spanish" name="languages[]" value="spanish"> Hindi</label>
+        <label for="french"><input type="checkbox" id="french" name="languages[]" value="french"> Telugu</label>
+        <br>
+        <br>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>
